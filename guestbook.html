@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello</h1>
+      <div class="row">
+        <div class="col-md-6">
+
+          <form>
+            <div class="form-group">
+              <label for="sender">Sender</label>
+              <input type="text" class="form-control" id="sender" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <input type="text" class="form-control" id="message">
+            </div>
+            <div class="form-group">
+              <label for="mood">Mood</label>
+              <input type="text" class="form-control" id="mood">
+            </div>
+
+            <button id="post" type="submit" class="btn btn-primary">Post</button>
+
+          </form>
+        </div>
+        <div id="messages" class="col-md-6">
+          Messages
+          <table class="table table-bordered" id="table" style="background-color: #99D19F;">
+            <tr>
+              <th> Name</th>
+              <th> Message</th>
+              <th> Mood</th>
+            </tr>
+
+            <tbody id="tablebody">
+              <tr>
+                <td> Ayesha</td>
+                <td>whatever</td>
+                <td>happy</td>
+              </tr>
+            </tbody>
+          </table>
+
+     </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="guestbook.js"></script>
+  </body>
+</html>
